@@ -1,0 +1,8 @@
+_DS_Store
+a.out
+# exclude everything in Output folder
+Outputs/*
+
+# don't exclude .gitkeep
+!Outputs/.gitkeep
+
