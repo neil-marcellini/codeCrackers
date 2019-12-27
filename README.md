@@ -26,6 +26,15 @@ After compilation type the following command to run:
 After about 9 seconds the program will print the time it took to complete. You can look in the outputs 
 folder while the program is running to see the files being output in real time.
 
+## What I Learned
+We chose to implement our progam with a table of primes hard coded as an array. We chose to process the semi-primes in batches and skip primes larger than a certain size, so that the program would actually finish. We did not know how many semi-primes we would be given, and they could be as large as 2^64. 
+
+Two major take aways are:
+
+We should have divided each semi-prime by each prime in the table to find both factors, rather than iterating through the table in nested for loops and finding two factors that multiply to equal the semi-prime. The approach with division would be faster and allow us to handle larger semi-primes. 
+
+Parallelize super-tasks before sub-tasks. It is much better to start by factoring multiple semi-primes at once rather than parallelize the factoring of one semi-prime first. Eventually we implemented both for maximum speed.
+
 ## Acknowledgments
 Written by Neil Marcellini and Richard Zins for COMP 262 - Computer Organization and Architecture at CSU Channel Islands.
 Links to references are included as comments in the source code.
