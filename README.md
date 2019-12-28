@@ -8,6 +8,8 @@ multi-threading. The team who could factor the most semi-primes in 30 seconds wa
 ## Prerequisites
 You will need to [install OpenMP](https://www.geeksforgeeks.org/openmp-introduction-with-installation-guide/) and a C compiler for your machine.
 
+If you are on Mac you will need to have xcode command line tools installed.
+
 ## Getting Started
 Open the directory in terminal and type the following commands to compile:
 
